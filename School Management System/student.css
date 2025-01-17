@@ -1,0 +1,190 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative; /* Add this to make absolute positioning within the container possible */
+  display: flex;
+  max-width: 860px; /* Double the max-width for side-by-side layout */
+  width: 30%;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  color: white;
+}
+.backBtn {
+  position: absolute; /* Position the back button absolutely */
+  top: 1rem; /* Distance from the top of the container */
+  left: 1rem; /* Distance from the left of the container */
+  background-color: transparent;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid rgb(77, 134, 201); /* Corrected to use valid RGB format */
+}
+
+.backBtn a {
+  padding: 1%;
+  text-decoration: none;
+  color: #4D869C;
+}
+.container .registration {
+  display: none;
+}
+#check:checked ~ .registration {
+  display: block;
+}
+#check:checked ~ .login {
+  display: none;
+}
+#check {
+  display: none;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1;
+  color: black;
+}
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.box h2 {
+  margin: 0 0 15px;
+  color: #4D869C;
+  text-align: center;
+}
+.box input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4D869C;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.box button:hover {
+  background-color: #3a6c7d;
+}
+.box p {
+  color: red;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator hr {
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  border: none;
+}
+.box .hero_img {
+  width: 100%;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  margin-top: none;
+  color:#4D869C;
+}
+.form input {
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form .title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form input:focus {
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.form a {
+  font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+.form a:hover {
+  text-decoration: underline;
+  color:#4D869C;
+}
+.nextBtn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nextBtn:hover {
+  background-color: #4D869C;
+}
+@media (max-width: 600px) {
+  .backBtn {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+  }
+  .box, .form {
+    width: 100%;
+    padding: 1rem;
+  }
+}

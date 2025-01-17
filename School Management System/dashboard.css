@@ -1,0 +1,381 @@
+body {
+    margin-left: 197px; /* Adjusted to accommodate the sidebar width */
+    font-family: Arial, sans-serif;
+    padding-top: 5%; /* Add padding to move content lower */
+    padding-left: 20px; /* Optional: Add left padding to create space from the sidebar */
+    background-color: #FAFAFA;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 110%;
+    position: fixed;
+    top: 0;
+    background-color: #EEF7FF;
+    z-index: 1000;
+
+}
+
+.header h1 {
+    text-shadow: 1px 1px 2px black;
+    color: #4D869C;
+}
+
+
+.dashboard-img {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add some space between the image and the heading */
+}
+.profile-img {
+    width: 50px; /* Adjust the width as needed */
+    margin-left: 1000px; /* Add some space between the image and the heading */
+    cursor: pointer;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 50px; /* Adjust the width as needed */
+    cursor: pointer;
+}
+
+.header .about-box2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Adjust to align the about box under the image */
+    width: 200px; /* Adjust the width as needed */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    z-index: 1;
+    margin-left: 890px; /* Remove margin-left if it's no longer needed */
+}
+
+.header .about-box2 a {
+    display: block; /* Make the link a block element to allow padding */
+    padding: 10px 20px; /* Adjust padding to increase the clickable area */
+    text-decoration: none; /* Ensure there is no underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.header .about-box2 a:hover {
+    background-color: #4D869C;
+    color: white;
+}
+
+.profile-container:hover .about-box2 {
+    display: block;
+}
+
+
+.profile-container:hover .about-box2 {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+
+
+.card {
+    background-color: #f9f9f9; /* Light gray background color */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.3em;
+    text-align: center;
+    width: calc(23%); /* Calculate width to occupy the whole screen with margin */
+    cursor: pointer;
+}
+.card:nth-child(1) {
+    background-color: #CDE8E5; 
+}
+
+.card:nth-child(2) {
+    background-color: #EEF7FF; 
+}
+
+.card:nth-child(3) {
+    background-color: #7AB2B2; 
+}
+
+.card:nth-child(4) {
+    background-color: #4D869C;
+}
+
+.card .card-img {
+    width: 100px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.card p {
+    margin: 0.5em 0 0;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    max-width: 50%; /* This ensures the canvas does not overflow its container */
+}
+
+#genderChart {
+    width: 40% !important;
+    height: 40% !important;
+}
+
+.department h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 2em;
+    text-shadow: 1px 1px 2px black;
+    color: #4D869C;
+}
+
+.departments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+.departments-container .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 23%;
+    margin: 0.3em;
+    cursor: pointer;
+    position: relative;
+}
+
+.departments-container .card .about-box2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    z-index: 1;
+    color: #4D869C;
+}
+
+.departments-container .card:hover .about-box2 {
+    display: block;
+}
+
+.departments-container p{
+    color: black;
+    text-align: left;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #EEF7FF;
+    padding: 2rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.sidebar_menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar_menu li {
+    margin-bottom: 1.5rem;
+}
+
+
+.sidebar_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.sidebar_info {
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebara-img {
+    width: 30px; 
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+
+.sidebar p {
+    color: black;
+    font-size: small;
+}
+
+.sidebar_link:hover {
+    color: #4D869C;
+}
+.about-box h2 {
+    color: #4D869C;
+    margin-top: 0;
+}
+.about-box1 h2 {
+    color: #4D869C;
+    margin-top: 0;
+}
+.about-box2 h2 {
+    color: #4D869C;
+    margin-top: 0;
+}
+
+.about-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-box ul li {
+    margin-bottom: 0.5em;
+}
+.about-box1 {
+    position: absolute;
+    top: 10%;
+    left: 100%; 
+    width: 300px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.about-box {
+    position: absolute;
+    top: 20%;
+    left: 100%; 
+    width: 300px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.about-box2 {
+    position: absolute;
+    top: 30%;
+    left: 100%; 
+    width: 300px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+
+.sidebar_info {
+    margin-top: 130%; /* Push the link to the bottom */
+    margin-bottom: -120%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.sidebar_item:hover .about-box1 {
+    display: block;
+}
+
+.sidebar_item:hover .about-box {
+    display: block;
+}
+.sidebar_item:hover .about-box2 {
+    display: block;
+}
+.sidebar_link:after {
+    content: '➤';
+}
+
+.calendar-container {
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border: 1px solid gray; /* Adding a border */
+    text-align: center;
+}
+.calendar-container h2{
+    color: #4D869C;
+
+}
+
+.attendance-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.calendar-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.attendance-section {
+    flex: 1;
+}
+
+.attendance-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-section th, .attendance-section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.attendance-section th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}

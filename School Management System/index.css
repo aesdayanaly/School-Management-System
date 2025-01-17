@@ -1,0 +1,399 @@
+body {
+    margin-left: 197px; /* Adjusted to accommodate the sidebar width */
+    font-family: Arial, sans-serif;
+    padding-top: 5%; /* Add padding to move content lower */
+    padding-left: 20px; /* Optional: Add left padding to create space from the sidebar */
+    background-color: #FAFAFA;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 110%;
+    position: fixed;
+    top: 0;
+    background-color: #EEF7FF;
+    z-index: 1000;
+}
+
+.header h1 {
+    text-shadow: 1px 1px 2px black;
+    color: #4D869C;
+}
+
+.dashboard-img {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add some space between the image and the heading */
+}
+.profile-img {
+    width: 50px; /* Adjust the width as needed */
+    margin-left: 1000px; /* Add some space between the image and the heading */
+    cursor: pointer;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 50px; /* Adjust the width as needed */
+    cursor: pointer;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    width: 100%; /* Set to 100% */
+    height: 200px; /* Adjust height */
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #EEF7FF;
+    padding: 2rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.sidebar_menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.sidebar_menu li {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sidebar_info {
+    display: inline-flex;
+    text-decoration: none;
+    margin-bottom: 10%; /* Adjust the value as needed */
+    margin-left: -9px;
+
+}
+
+.sidebara-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.sidebar p {
+    color: black;
+    margin-bottom: 10px;
+}
+.about-box2 h2 {
+    color: #4D869C;
+    margin-top: 0;
+}
+
+.about-box2 {
+    position: absolute;
+    top: 90%;
+    left: 90%; 
+    width: 300px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.header .about-box2 a:hover {
+    background-color: #4D869C;
+    color: white;
+}
+
+.profile-container:hover .about-box2 {
+    display: block;
+}
+
+
+.about-box2 a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 0.9rem;
+}
+
+.main-content {
+    padding: 20px;
+}
+.cards-body p{
+    text-decoration: none;
+    color: #4D869C;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.student-img {
+    width: 30%;
+    margin-left: 30%; /* Add some space between the image and the text */
+}
+
+.cards-container {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cardd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between the cards */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.card1, .card2 {
+    flex: 1;
+    min-width: 45%; /* Adjust this value to control the minimum width of each card */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card2 {
+    margin-left: 20px; /* Add spacing between the cards if needed */
+}
+
+.course {
+    margin-bottom: 10px; /* Adjust spacing between course entries */
+}
+
+.card-body {
+    display: flex; /* Use flexbox to place items beside each other */
+    align-items: center; /* Align items vertically centered */
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card1 p {
+    margin: 0;
+}
+
+.clock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #4D869C;
+}
+
+
+
+.calendar-attendance-container {
+    display: flex;
+    gap: 20px;
+}
+
+.calendar-container, .info-sections-container {
+    flex: 1;
+}
+
+#calendar {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.events-section {
+    margin-bottom: 20px;
+}
+
+.events-section h3 {
+    margin-bottom: 10px;
+}
+
+.events-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.events-section ul li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.info-sections-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.attendance-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.attendance-section1 {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+}
+.notice-birthday-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Adjust as needed */
+    width: 100%;
+}
+
+.notice-board, .birthday-section {
+    flex: 1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%; /* Ensures card takes full height of the container */
+}
+
+.card-header {
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 0.9rem;
+}
+
+
+/* Chatbox header */
+.chat-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Chat messages */
+.chat-messages {
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Chat input field and send button */
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+.chat-input textarea {
+    flex: 1;
+    resize: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Center the dashboard */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:20px
+}
+
+/* Center alignment for the teacher list */
+.teacher-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style for each teacher */
+.teacher {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.teacher img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.teacher span {
+    font-weight: bold;
+}
+
+/* No changes to the rest of the CSS */
